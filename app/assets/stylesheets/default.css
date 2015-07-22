@@ -753,4 +753,18 @@
 		color: #FFFFFF;
 	}
 	
-	
+/*********************************************************************************/
+/* Three Contents                                                                */
+/*********************************************************************************/
+	#three-contents .content
+	{
+		width: 800px;
+		padding: 80px 40px 80px 40px;
+	}
+
+	#three-contents .image
+	{
+		width: 300px;
+		height:;
+		padding: 80px 40px 80px 40px;
+	}
