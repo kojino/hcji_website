@@ -252,11 +252,25 @@
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
+	.tbox .button
 	{
 		display: inline-block;
 		margin-top: 2em;
 		padding: 0.8em 2em;
+		background: #64ABD1;
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: 1em;
+		color: #FFF;
+	}
+
+	.content .button
+	{
+		display: inline-block;
+		margin-bottom: 0.5em;
+		/*margin-top: em;*/
+		padding: 0.4em 0.4em;
 		background: #64ABD1;
 		line-height: 1.8em;
 		letter-spacing: 1px;
@@ -365,12 +379,12 @@
 	
 	#menu ul
 	{
-		display: inline-block;
-		padding: 0em 2em;
+		position:relative;
+    	left:28%;
 		text-align: center;
 	}
 	
-	#menu li
+/*	#menu li
 	{
 		display: inline-block;
 	}
@@ -387,12 +401,12 @@
 		outline: 0;
 		color: #FFF;
 	}
-	
-	#menu li:hover a, #menu li.active a, #menu li.active span
+*/	
+	#menu li.active
 	{
-		background: #FFF;
+		/*background: #FFF;
 		border-radius: 7px 7px 0px 0px;
-		color: #2056ac;
+		color: #2056ac;*/
 	}
 	
 	#menu .current_page_item a
@@ -519,14 +533,13 @@
 	}
 
 
-		
-	#footer .fbox1,
-	#footer .fbox2,
-	#footer .fbox3
+	#footer .fbox
+
+	#footer .fbox
 	{
-		float: left;
-		width: 320px;
+		width: 500px;
 		padding: 0px 40px 0px 40px;
+		margin:auto;
 	}
 	
 	#footer .icon
@@ -534,6 +547,7 @@
 		display: block;
 		margin-bottom: 1em;
 		font-size: 3em;
+		margin:auto;
 	}
 
 	
@@ -683,15 +697,16 @@
 		
 	}
 		
-	#three-column #tbox1,
-	#three-column #tbox2,
-	#three-column #tbox3
+	#three-column div p,
 	{
-		float: left;
 		width: 320px;
-		padding: 80px 40px 80px 40px;
 	}
 	
+	#tbox .image
+	{
+		width:320px;
+	}
+
 	#three-column .title
 	{
 		text-align: center;
@@ -714,7 +729,19 @@
 		border-top-color: #292929;
 	}
 	
-	
+	#three-column .tbox
+	{
+		float:left; 
+		width:300px; 
+		padding: 20px 40px 80px 40px;
+	}
+
+	#three-column .tbox .image
+	{
+		width:80%;
+		height:80%; 
+	}
+
 	ul.tools
 	{
 		margin: 0;
@@ -758,13 +785,43 @@
 /*********************************************************************************/
 	#three-contents .content
 	{
-		width: 800px;
+		width: 1200px;
+		padding: 60px 80px 80px 40px;
+	}
+
+	#three-contents img
+	{
+		float:right;
+		width:400px;
+		padding: 60px 80px 80px 40px;
+	}
+
+/*********************************************************************************/
+/* Who We Are                                                                    */
+/*********************************************************************************/
+	#whoweare .content
+	{
 		padding: 80px 40px 80px 40px;
 	}
 
-	#three-contents .image
-	{
-		width: 300px;
-		height:;
-		padding: 80px 40px 80px 40px;
-	}
+
+/*********************************************************************************/
+/* Dropdown Menu                                                                 */
+/*********************************************************************************/
+/* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+ 
+/* base nav styles */
+nav { display:block; margin:0 auto 20px; position:relative; font:16px}
+nav ul { padding:0; margin:0; }
+nav li { position:relative; float:left; list-style-type:none; }
+nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a { display:block; padding:10px 20px; /*border-left:1px solid #999;*/ /*border-right:1px solid #222;*/ color:#eee; text-decoration:none; }
+nav li a:focus { outline:none; text-decoration:underline; }
+nav li:first-child a { border-left:none; }
+nav li.last a { border-right:none; }
+nav a span { display:block; float:right; /*margin-lseft:5px;*/ }
+nav ul ul { display:none; width:100%; position:absolute; left:0; background:#6a6a6a; }
+nav ul ul li { float:none; }
+nav ul ul a { padding:5px 10px; border-left:none; border-right:none; font-size:14px; }
+nav ul ul a:hover { background-color:#555; }

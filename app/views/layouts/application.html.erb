@@ -26,7 +26,7 @@ Released   : 20140322
 </head>
 
 <body>
-
+<!-- 
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
@@ -50,18 +50,38 @@ Released   : 20140322
 			</nav>
 		</div>
 	</div>
+</div> -->
+<div id="header" class="container">
+	<div id="logo">
+    	<span class="icon icon-cog"></span> 
+    	<!-- <img src="assets/logo3.jpg" alt="" /> -->
+		<h1><a href="#">Harvard College Japan Initiative</a></h1>
+	</div>
+	<div class="no-js" id="menu">
+        <nav id="topNav">
+            <ul>
+                <li><a href="static_pages/home" title="Home">Home</a></li>
+                <li><a href="static_pages/whoweare" title="Who We Are">Who We Are</a></li>
+            	<li>
+                    <a href="static_pages/whatwedo" title="What We Do">What We Do</a>
+                    <ul>  
+                        <li><a href="static_pages/whatwedo#h-lab" title="H-LAB">H-LAB</a></li>
+                        <li><a href="static_pages/whatwedo#hcf" title="Career Forum">Career Forum</a></li>
+                        <li><a href="static_pages/whatwedo#explore" title="HCJI Explore">HCJI Explore</a></li>
+                    </ul>                
+                </li>
+                <li><a href="static_pages/connectwithus" title="Connect With Us">Connect With Us</a></li>
+            </ul>
+        </nav>
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+    </div>
 </div>
+
 
 <%= yield %>
 
-<div id="footer">
-	<div class="container">
-		<div class="fbox1">
-			<span class="icon icon-envelope"></span>
-			<span>hcji@gmail.com</span>
-		</div>
-	</div>
-</div>
+
 <div id="copyright">
 	<p>&copy; Harvard College Japan Initiative. All rights reserved. | Created by <a href="https://www.linkedin.com/in/kojinoshiba" rel="nofollow">Kojin Oshiba '18</a>.</p>
 	<ul class="contact">
