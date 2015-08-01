@@ -365,6 +365,11 @@
 	{
 		color: rgba(255,255,255,0.8);
 	}
+
+	#logo img
+	{
+		height:200px;
+	}
 	
 	
 
@@ -647,6 +652,13 @@
 		width: 282px;
 	}
 	
+	.column1 img,
+	.column2 img,
+	.column3 img,
+	.column4 img
+	{
+		width:100%;
+	}
 	.column1,
 	.column2,
 	.column3
@@ -671,6 +683,8 @@
 		padding-top: 1em;
 		border-top: 1px solid rgba(0,0,0,0.2);
 		text-align: center;
+		margin-left:auto;
+		margin-right:auto;
 	}
 	
 	#three-column h2
@@ -785,15 +799,16 @@
 /*********************************************************************************/
 	#three-contents .content
 	{
-		width: 1200px;
+		width: 1100px;
 		padding: 60px 80px 80px 40px;
+		border-top: 1px solid rgba(0,0,0,0.2);
 	}
 
-	#three-contents img
+	#three-contents .content img
 	{
 		float:right;
-		width:400px;
-		padding: 60px 80px 80px 40px;
+		height:400px;
+		margin-left:40px;
 	}
 
 /*********************************************************************************/
@@ -804,6 +819,12 @@
 		padding: 80px 40px 80px 40px;
 	}
 
+	#whoweare .content img
+	{
+		width:400px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
 
 /*********************************************************************************/
 /* Dropdown Menu                                                                 */

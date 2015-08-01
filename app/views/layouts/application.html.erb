@@ -1,15 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
 
-Name       : Undeviating 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140322
-
--->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,55 +12,32 @@ Released   : 20140322
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 </head>
 
 <body>
-<!-- 
-<div id="header-wrapper">
-	<div id="header" class="container">
-		<div id="logo">
-        	<span class="icon icon-cog"></span>
-			<h1><a href="#">Harvard College Japan Initiative</a></h1>
-		</div>
-		<div id="menu">
-			<nav>
-				<ul>
-					<li class="active"><a href="static_pages/home" accesskey="1" title="Home">Home</a></li>
-					<li><a href="static_pages/whoweare" accesskey="2" title="Who We Are">Who We Are</a></li>
-					<li><a href="static_pages/whatwedo" accesskey="3" title="What We Do">What We Do</a>
-						<ul>
-							<li><a href="#">Service 1</a></li>
-							<li><a href="#">Service 1</a></li>
-							<li><a href="#">Service 1</a></li>
-						</ul>
-					</li>
-					<li><a href="static_pages/connectwithus" accesskey="4" title="Connect with Us">Connect with Us</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div> -->
+
 <div id="header" class="container">
 	<div id="logo">
-    	<span class="icon icon-cog"></span> 
-    	<!-- <img src="assets/logo3.jpg" alt="" /> -->
-		<h1><a href="#">Harvard College Japan Initiative</a></h1>
+<!--     	<span class="icon icon-cog"></span>  -->
+    	<img src="assets/logo.png" alt="" />
+		<h1><%= link_to "Harvard College Japan Initiative", root_path %></h1>
 	</div>
 	<div class="no-js" id="menu">
         <nav id="topNav">
             <ul>
-                <li><a href="static_pages/home" title="Home">Home</a></li>
-                <li><a href="static_pages/whoweare" title="Who We Are">Who We Are</a></li>
-            	<li>
-                    <a href="static_pages/whatwedo" title="What We Do">What We Do</a>
+            	<li><%= link_to "Home", root_path %></li>
+            	<li><%= link_to "Who We Are",   whoweare_path %></li>
+            	<li><%= link_to "What We Do",   whatwedo_path %></li>
                     <ul>  
-                        <li><a href="static_pages/whatwedo#h-lab" title="H-LAB">H-LAB</a></li>
+                        <li><%= link_to "whatwedo#h-lab",   whatwedo_path %></li>
+                        <li><%= link_to "whatwedo#hcf",   whatwedo_path %></li>
+                        <li><%= link_to "whatwedo#explore",   whatwedo_path %></li>
+                        <!-- <li><a href="static_pages/whatwedo#h-lab" title="H-LAB">H-LAB</a></li>
                         <li><a href="static_pages/whatwedo#hcf" title="Career Forum">Career Forum</a></li>
-                        <li><a href="static_pages/whatwedo#explore" title="HCJI Explore">HCJI Explore</a></li>
+                        <li><a href="static_pages/whatwedo#explore" title="HCJI Explore">HCJI Explore</a></li> -->
                     </ul>                
                 </li>
-                <li><a href="static_pages/connectwithus" title="Connect With Us">Connect With Us</a></li>
+                <li><%= link_to "Connect with Us",  connect_path %></li>
             </ul>
         </nav>
         <script src="js/jquery.js"></script>
