@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'connect' => 'static_pages#connectwithus'
 
+  get 'careers' => 'static_pages#careers'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

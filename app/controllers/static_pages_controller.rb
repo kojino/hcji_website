@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def connectwithus
   end
+
+  def careers
+  end
 end
