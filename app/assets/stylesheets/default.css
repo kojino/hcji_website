@@ -265,6 +265,19 @@
 		color: #FFF;
 	}
 
+	.title .button
+	{
+		display: inline-block;
+		margin-top: 1em;
+		padding: 0.8em 2em;
+		background: #64ABD1;
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: 1em;
+		color: #FFF;
+	}
+
 	.content .button
 	{
 		display: inline-block;
