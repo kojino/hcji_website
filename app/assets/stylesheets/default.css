@@ -336,7 +336,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		background-color: #FAFEFA;
+		background-color: #FFF2FF;
 	}
 
 	#header
@@ -547,7 +547,7 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background: #FFEAFF;
+		background: #FFF2FF;
 		text-align: center;
 	}
 
@@ -585,7 +585,7 @@
 		padding: 2em 0em;
 		border-top: 20px #8F8C8F;
 		text-align: center;
-		background: #FFF7FB;
+		background: #FFFFFF;
 	}
 	
 	#copyright p

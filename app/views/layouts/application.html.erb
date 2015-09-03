@@ -23,26 +23,13 @@
     	<img src="assets/logo.png" alt="" />
 		<h1><%= link_to "Harvard College Japan Initiative", root_path %></h1>
 	</div>
-	<div class="no-js" id="menu">
-        <nav id="topNav">
-            <ul>
-            	<li><%= link_to "Home", root_path %></li>
-            	<li><%= link_to "Who We Are",   whoweare_path %></li>
-            	<li><%= link_to "What We Do",   whatwedo_path %></li>
-                    <ul>  
-                        <li><%= link_to "whatwedo#h-lab",   whatwedo_path %></li>
-                        <li><%= link_to "whatwedo#hcf",   whatwedo_path %></li>
-                        <li><%= link_to "whatwedo#explore",   whatwedo_path %></li>
-                        <!-- <li><a href="static_pages/whatwedo#h-lab" title="H-LAB">H-LAB</a></li>
-                        <li><a href="static_pages/whatwedo#hcf" title="Career Forum">Career Forum</a></li>
-                        <li><a href="static_pages/whatwedo#explore" title="HCJI Explore">HCJI Explore</a></li> -->
-                    </ul>                
-                </li>
-                <li><%= link_to "Connect with Us",  connect_path %></li>
-            </ul>
-        </nav>
-        <script src="js/jquery.js"></script>
-        <script src="js/modernizr.js"></script>
+	<div id="menu">
+        <ul>
+        	<li><%= link_to "Home", root_path %></li>
+        	<li><%= link_to "Who We Are",   whoweare_path %></li>
+        	<li><%= link_to "What We Do",   whatwedo_path %></li>    
+            <li><%= link_to "Connect with Us",  connect_path %></li>
+        </ul>
     </div>
 </div>
 
