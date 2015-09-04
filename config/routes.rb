@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'careers' => 'static_pages#careers'
 
+  get 'explore' => 'static_pages#explore'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
